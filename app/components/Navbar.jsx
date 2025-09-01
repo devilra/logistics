@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 w-full bg-white  z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
         <div className="flex justify-end  md:items-center gap-2">
-          <svg
+          {/* <svg
             className="ign-logo w-40 h-auto"
             viewBox="0 0 170 38"
             xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </g>
               </g>
             </g>
-          </svg>
+          </svg> */}
           {/* <span className="font-bold text-lg hidden md:block">MAERSK</span> */}
 
           {/* Mobile Menu */}
@@ -177,9 +177,8 @@ const Navbar = () => {
         <div className="hidden md:block">
           <ul className="flex gap-5">
             {navlink_1.map((l, index) => (
-              <div>
+              <div key={index}>
                 <Link
-                  key={index}
                   href="#"
                   className="flex items-center p-2 hover:bg-gray-200 transition-all duration-300 gap-1 rounded text-[16px]"
                 >
@@ -194,12 +193,11 @@ const Navbar = () => {
 
       {/* Desktop_Navlink_2 */}
 
-      <div className="px-6 hidden md:flex md:justify-between md:items-center py-5">
+      <div className="px-6 hidden md:flex md:justify-between md:items-center py-2">
         <ul className="flex gap-5">
           {navLink_2.map((l, index) => (
-            <div>
+            <div key={index}>
               <Link
-                key={index}
                 href="#"
                 className="flex p-2 hover:bg-gray-200 transition-all duration-300 items-center rounded"
               >
