@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-white  z-50">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-3">
+      <div className="max-w-7xl mx-auto flex justify-end md:justify-between items-center px-6 py-3">
         <div className="flex justify-end  md:items-center gap-2">
           {/* <svg
             className="ign-logo w-40 h-auto"
@@ -92,7 +92,7 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
 
-          <div className="flex md:hidden ml-20 items-center gap-4">
+          <div className="flex  md:hidden ml-20 items-center gap-4">
             <MdOutlineSearch size={25} className="text-gray-700" />
             <MdOutlineContactSupport size={23} className="text-gray-700" />
             <GrContact size={20} className="text-gray-700" />

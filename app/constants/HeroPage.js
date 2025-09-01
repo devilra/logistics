@@ -1,3 +1,5 @@
+import { LineChart, Monitor, TreePine, Workflow } from "lucide-react";
+
 const insights = [
   {
     id: 1,
@@ -64,4 +66,27 @@ const insights = [
   },
 ];
 
-export { insights };
+const insights_2 = [
+  {
+    title: "Integrated logistics",
+    desc: "Everything is connected, especially logistics. Supply chains span the globe, with each component affecting the next. Read on for more insights on all things integrated logistics.",
+    icon: <Workflow className="w-12 h-12 text-sky-500" />,
+  },
+  {
+    title: "Digitalisation",
+    desc: "The digital world is vital to companies, with many choosing to use it to reach and expand their customer base. Read on for the latest digital innovations within logistics.",
+    icon: <Monitor className="w-12 h-12 text-sky-500" />,
+  },
+  {
+    title: "Growth",
+    desc: "Expansion, connection, and growth; three key elements most companies are constantly looking to invest in and develop in an ever-changing game of logistics. Click here for all things growth.",
+    icon: <LineChart className="w-12 h-12 text-sky-500" />,
+  },
+  {
+    title: "Sustainability",
+    desc: "Decarbonisation is reshaping supply chains, calling for a shift in how logistics operates. Read on for insights into what it means for your business – and how you can adapt.",
+    icon: <TreePine className="w-12 h-12 text-sky-500" />,
+  },
+];
+
+export { insights, insights_2 };
