@@ -106,21 +106,21 @@ const Hero = () => {
                 {insights.map((item) => (
                   <div
                     key={item.id}
-                    className={`relative rounded-xl overflow-hidden shadow-md ${item.className}`}
+                    className={`group relative rounded-xl overflow-hidden shadow-md ${item.className}`}
                   >
                     {/* Image */}
                     <img
                       src={item.img}
                       alt={item.title}
                       fill
-                      className="object-cover"
+                      className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
 
                     {/* Black Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
 
                     {/* Text Content */}
-                    <div className="absolute bottom-0 left-0 p-4 text-white">
+                    <div className="absolute bottom-0 left-0 p-4 text-white transition-all duration-500 group-hover:-translate-y-2">
                       <p className="text-xs font-semibold">
                         {item.tag} • {item.date}
                       </p>
