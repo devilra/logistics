@@ -159,7 +159,7 @@ const Navbar = () => {
                     <Link href="#">Services</Link>
                   </li>
                   <li>
-                    <Link href="#">Company</Link>
+                    <Link href="/contact">Contact us</Link>
                   </li>
                 </ul>
 

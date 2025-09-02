@@ -47,7 +47,7 @@ const Hero = () => {
       <section className="">
         {/* The sticky heading container. Use position: sticky so it becomes fixed when it reaches the top of the viewport. top should equal navbar height (4rem). */}
         <div className="mt-6">
-          <div className="sticky top-14 md:top-28 z-20 px-4 md:px-8 bg-white">
+          <div className="sticky top-12 md:top-28 z-20 px-4 md:px-8 bg-white">
             {/* Add a little inner wrapper with border and background to match the site look */}
             <div className="py-4 md:py-4 bg-white  border-gray-200">
               {/* Mobile: Dropdown */}
