@@ -1,6 +1,8 @@
 import { Saira } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
+import NProgressProvider from "./providers/NProgressProvider";
 
 const saira = Saira({
   subsets: ["latin"],
@@ -18,7 +20,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${saira.className}} antialiased`}>
         <Navbar />
-        {children}
+        <NProgressProvider> {children}</NProgressProvider>
+        <Footer />
       </body>
     </html>
   );

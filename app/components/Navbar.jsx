@@ -92,6 +92,10 @@ const Navbar = () => {
 
           {/* Mobile Menu */}
 
+          <Link href="/" className="text-xl">
+            Home
+          </Link>
+
           <div className="flex  md:hidden ml-20 items-center gap-4">
             <MdOutlineSearch size={25} className="text-gray-700" />
             <MdOutlineContactSupport size={23} className="text-gray-700" />
@@ -179,7 +183,7 @@ const Navbar = () => {
             {navlink_1.map((l, index) => (
               <div key={index}>
                 <Link
-                  href="#"
+                  href={l.path}
                   className="flex items-center p-2 hover:bg-gray-200 transition-all duration-300 gap-1 rounded text-[16px]"
                 >
                   {l.icon}

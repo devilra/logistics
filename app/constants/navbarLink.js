@@ -9,22 +9,27 @@ const navlink_1 = [
   {
     icon: <GrLanguage />,
     title: "EN",
+    path: "#",
   },
   {
     icon: <MdOutlineSearch />,
     title: "Search",
+    path: "#",
   },
   {
     icon: <IoMdNotificationsOutline />,
     title: "Notifications",
+    path: "#",
   },
   {
     icon: <MdOutlineContactSupport />,
     title: "Support",
+    path: "#",
   },
   {
     icon: <GrContact />,
     title: "Contact Us",
+    path: "/contact",
   },
 ];
 

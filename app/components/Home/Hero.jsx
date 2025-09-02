@@ -10,10 +10,10 @@ const Hero = () => {
   return (
     <div className="min-h-screen">
       {/* Hero video section */}
-      <section className="relative w-full h-[550px] md:h-[400px]  md:rounded-br-[70px]">
+      <section className="relative w-full h-[550px] md:h-[400px]  md:rounded-br-[70px] overflow-hidden">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/bg.mp4"
+          src="/videos/bg-2.mp4"
           autoPlay
           loop
           muted
@@ -112,7 +112,6 @@ const Hero = () => {
                     <img
                       src={item.img}
                       alt={item.title}
-                      fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
 
