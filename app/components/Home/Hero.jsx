@@ -13,7 +13,7 @@ const Hero = () => {
       <section className="relative w-full h-[550px] md:h-[400px]  md:rounded-br-[70px] overflow-hidden">
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src="/videos/bg-3.mp4"
+          src="/bg.mp4"
           autoPlay
           loop
           muted
