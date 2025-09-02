@@ -11,20 +11,19 @@ const Hero = () => {
     <div className="min-h-screen">
       {/* Hero video section */}
       <section className="relative w-full h-[550px] md:h-[400px]  md:rounded-br-[70px] overflow-hidden">
-        {/* <video
+        <video
           className="absolute top-0 left-0 w-full h-full object-cover"
           src="/videos/bg-2.mp4"
-          src="/bg.jpg"
           autoPlay
           loop
           muted
           playsInline
-        /> */}
-        <img
+        />
+        {/* <img
           className="absolute top-0 left-0 w-full h-full object-cover"
           // src="/videos/bg-2.mp4"
           src="/bg.jpg"
-        />
+        /> */}
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="z-10 relative flex flex-col items-start pt-10 justify-center md:h-[80%] px-6 text-white">
           <h1 className="text-4xl md:text-5xl font-light leading-tight">
